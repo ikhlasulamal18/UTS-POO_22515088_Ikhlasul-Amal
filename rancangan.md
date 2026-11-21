@@ -29,3 +29,24 @@ Validasi:
 1. judul tidak kosong
 2. durasi lebih dari 0
 3. harga lebih dari 0 
+
+## Studio
+Atribut:
+1. kodeStudio: String
+2. nama: String
+3. kapasitas: int
+4. kursiTerpesan: boolean[]
+
+Konstruktor:
+1. Studio()
+2. Studio(String kodeStudio, String nama, int kapasitas)
+
+Method perilaku:
+1. isKursiTersedia(int nomor): boolean
+2. pesanKursi(int nomor): boolean
+3. hitungSisaKursi(): int
+4. tampilkanDenahKursi()
+
+Validasi:
+1. kapasitas lebih dari 0
+2. nomor kursi harus 1 sampai kapasitas
