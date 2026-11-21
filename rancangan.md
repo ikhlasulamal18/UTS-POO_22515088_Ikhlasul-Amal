@@ -50,3 +50,23 @@ Method perilaku:
 Validasi:
 1. kapasitas lebih dari 0
 2. nomor kursi harus 1 sampai kapasitas
+
+## Pelanggan
+Atribut:
+1. idPelanggan: String
+2. nama: String
+3. noHp: String
+4. jumlahTiket: int
+
+Konstruktor:
+1. Pelanggan()
+2. Pelanggan(String idPelanggan, String nama, String noHp)
+
+Method perilaku:
+1. tampilkanInfo()
+2. tambahJumlahTiket()
+3. isDataLengkap(): boolean
+
+Validasi:
+1. nama tidak kosong
+2. noHp hanya berisi angka
