@@ -147,3 +147,15 @@ Spesifikasi operasi publik:
     - Efek: true jika size sama dengan kapasitas. Kompleksitas O(1)
 8. isEmpty(): boolean
     - Efek: true jika size sama dengan 0. Kompleksitas O(1)
+
+## Main
+Atribut:
+1. bioskop: Bioskop
+2. scanner: Scanner
+
+Method:
+1. main(String[] args)
+2. tampilkanMenu()
+3. bacaInt(String prompt): int
+4. bacaString(String prompt): String
+5. satu method per menu
