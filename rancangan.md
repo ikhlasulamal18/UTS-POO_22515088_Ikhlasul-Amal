@@ -110,3 +110,40 @@ Method perilaku:
 4. beliTiket(...): Tiket
 5. cariFilm(String judul): Film
 6. buatLaporan()
+
+## DaftarFilmTerurut (ADT)
+Atribut:
+1. data: ArrayList<Film>
+2. kapasitas: int (misalnya 20)
+
+Konstruktor:
+1. DaftarFilmTerurut() (kapasitas default)
+2. DaftarFilmTerurut(int kapasitas)
+
+Spesifikasi operasi publik:
+1. insert(Film f): boolean
+    - Prasyarat: ADT tidak penuh dan judul belum ada
+    - Efek: film disisipkan pada posisi yang menjaga urutan judul. Kembalian false jika penuh atau duplikat
+    - Kompleksitas: O(n)
+2. remove(String judul): boolean
+    - Prasyarat: ADT tidak kosong dan judul ada
+    - Efek: film dihapus, elemen sesudahnya bergeser. Kembalian false jika kosong atau tidak ditemukan
+    - Kompleksitas: O(n)
+3. search(String judul): int
+    - Prasyarat: tidak ada
+    - Efek: mencari dengan binary search, mengembalikan indeks atau -1 jika tidak ditemukan
+    - Kompleksitas: O(log n)
+4. get(int index): Film
+    - Prasyarat: 0 <= index < size
+    - Efek: mengembalikan film pada indeks tersebut, atau null dengan pesan jika di luar rentang
+    - Kompleksitas: O(1)
+5. tampilkan(): void
+    - Prasyarat: tidak ada
+    - Efek: mencetak semua film secara terurut, atau pesan bila kosong
+    - Kompleksitas: O(n)
+6. size(): int
+    - Efek: mengembalikan jumlah film saat ini. Kompleksitas O(1)
+7. isFull(): boolean
+    - Efek: true jika size sama dengan kapasitas. Kompleksitas O(1)
+8. isEmpty(): boolean
+    - Efek: true jika size sama dengan 0. Kompleksitas O(1)
