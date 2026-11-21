@@ -89,3 +89,24 @@ Method perilaku:
 1. hitungHarga(): double
 2. batalkan()
 3. tampilkanInfo()
+
+## Bioskop
+Atribut:
+1. namaBioskop: String
+2. alamat: String
+3. daftarStudio: ArrayList<Studio>
+4. daftarPelanggan: ArrayList<Pelanggan>
+5. daftarTiket: ArrayList<Tiket>
+6. daftarFilm: DaftarFilmTerurut
+
+Konstruktor:
+1. Bioskop()
+2. Bioskop(String namaBioskop, String alamat)
+
+Method perilaku:
+1. tambahFilm(Film film): boolean
+2. tambahStudio(Studio studio)
+3. tambahPelanggan(Pelanggan pelanggan)
+4. beliTiket(...): Tiket
+5. cariFilm(String judul): Film
+6. buatLaporan()
