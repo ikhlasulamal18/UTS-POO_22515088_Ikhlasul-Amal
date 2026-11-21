@@ -70,3 +70,22 @@ Method perilaku:
 Validasi:
 1. nama tidak kosong
 2. noHp hanya berisi angka
+
+## Tiket
+Atribut:
+1. kodeTiket: String
+2. nomorKursi: int
+3. totalHarga: double
+4. dibatalkan: boolean
+5. film: Film
+6. studio: Studio
+7. pelanggan: Pelanggan
+
+Konstruktor:
+1. Tiket()
+2. Tiket(String kodeTiket, Film film, Studio studio, Pelanggan pelanggan, int nomorKursi)
+
+Method perilaku:
+1. hitungHarga(): double
+2. batalkan()
+3. tampilkanInfo()
