@@ -50,7 +50,7 @@ public class Studio {
     // ---------- Setter dengan validasi ----------
     public void setKodeStudio(String kodeStudio) {
         if (kodeStudio == null || kodeStudio.trim().isEmpty()) {
-            throw new IllegalArgumentException("Kode studio tidak boleh kosong.");
+            throw new IllegalArgumentException("Kode studio tidak boleh 0.");
         }
         this.kodeStudio = kodeStudio.trim();
     }
